@@ -17,4 +17,5 @@ explore a range of robot arms with differnet motors (dc, stepper, servo)
 
 ## Ref 
 - https://tinyurl.com/ud9fysdh
+- https://docs.arduino.cc/tutorials/generic/secrets-of-arduino-pwm
 - 
