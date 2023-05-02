@@ -5,7 +5,7 @@
 
 ### servo motor robot hand
 - Bit Bang PWM (pulse width modulation), loop io on/off with duration
-- use LED port as poor mans io output
+- use LED port as test io output
 - 
 
 ![](https://github.com/SteveJustin1963/tec-ROBOT-ARM/blob/master/pics/11.png)
