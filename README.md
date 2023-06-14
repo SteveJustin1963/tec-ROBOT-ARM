@@ -11,6 +11,10 @@
 ![](https://github.com/SteveJustin1963/tec-ROBOT-ARM/blob/master/pics/11.png)
 
 
+## https://github.com/SteveJustin1963/tec-T800
+continue on with this robot hand
+
+
  
  
 
