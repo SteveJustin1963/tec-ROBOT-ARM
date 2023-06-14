@@ -98,3 +98,46 @@ and includes the `rot` word. If your Forth system doesn't support these features
 the code will need to be adjusted.
 ///////////////////////////////////////////////
 
+///////////////// forth 73 //////////////////////////
+
+5 CONSTANT SERVO_PIN
+1000 CONSTANT SERVO_MIN_PULSE
+2000 CONSTANT SERVO_MAX_PULSE
+1500 CONSTANT SERVO_NEUTRAL_PULSE
+
+0 CONSTANT SERVO_MIN_ANGLE
+180 CONSTANT SERVO_MAX_ANGLE
+
+: SETUP ( -- )
+    ." Setup code here." ;
+
+: MAP ( n1 n2 n3 n4 n5 -- n6 )
+    ROT OVER - * SWAP OVER - / SWAP - + ;
+
+: WRITE_PULSE_WIDTH ( n -- )
+    DUP ." Set pin SERVO_PIN high for " . ." microseconds, then set it low and delay for 20ms." ;
+
+: SET_SERVO_POSITION ( n -- )
+    DUP SERVO_MIN_ANGLE < IF DROP SERVO_MIN_ANGLE THEN
+    DUP SERVO_MAX_ANGLE > IF DROP SERVO_MAX_ANGLE THEN
+    0 180 SERVO_MIN_PULSE SERVO_MAX_PULSE MAP WRITE_PULSE_WIDTH ;
+
+: MAIN ( -- )
+    SETUP BEGIN
+        ." Read desired position." SET_SERVO_POSITION 20 ." Delay for 20ms."
+    AGAIN ;
+
+' MAIN IS MAIN
+/////////////////////////////////////////////////
+
+
+The `." "` word in Forth is used to display a message when the word is executed. 
+Since I cannot actually perform actions such as controlling pins or implementing delays in this Forth 73 code, 
+I've used `." "` to indicate where you'd need to add these actions in a real implementation.
+
+Remember, the actual hardware control commands would depend on the specific Forth system you are using. 
+If you are using a specific Forth system for a certain hardware platform, that system might provide 
+its own words to control the hardware, and you should use those words instead of the placeholders 
+I've used here. The `' MAIN IS MAIN` line at the end might also need to be adjusted based on 
+the specific Forth system you're using.
+////////////////////////////////////////////////////
