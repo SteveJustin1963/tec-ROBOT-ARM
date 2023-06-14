@@ -1,12 +1,15 @@
 # tec-ROBOT-ARM
 
-### explore a range of robot arms (with hands) 
+## explore a range of robot arms (with hands) 
 - with differnet motors (dc, stepper, servo)
 
-### servo motor robot hand
-- Bit Bang PWM (pulse width modulation), loop io on/off with duration
+## servo motor robot hand
+- Bit Bang PWM (pulse width modulation), loop io on/off with duration  `code1`
 - use LED port as test io output
-- 
+
+ 
+
+
 
 ![](https://github.com/SteveJustin1963/tec-ROBOT-ARM/blob/master/pics/11.png)
 
