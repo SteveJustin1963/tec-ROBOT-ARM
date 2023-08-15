@@ -35,4 +35,6 @@ continue on with this robot hand
 - https://en.wikipedia.org/wiki/Arm
 - https://tinyurl.com/ud9fysdh
 - https://docs.arduino.cc/tutorials/generic/secrets-of-arduino-pwm
+- https://www.youtube.com/watch?v=IN8tjTk8ExI
+- 
 - 
