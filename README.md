@@ -1,7 +1,13 @@
 # tec-ROBOT-ARM
 
-## explore a range of robot arms (with hands) 
-- with differnet motors (dc, stepper, servo)
+explore a range of robot arms with 
+- hand, finger or different grippers, soft/ hard  
+- motors stepper, servo,
+- air or hydraulic
+- 
+
+
+
 
 ## servo motor robot hand
 - Bit Bang PWM (pulse width modulation), loop io on/off with duration  `code1`
