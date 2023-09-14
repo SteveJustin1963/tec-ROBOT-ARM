@@ -10,7 +10,7 @@ explore a range of robot arms with
 
 
 ## servo motor robot hand
-- Bit Bang PWM (pulse width modulation), loop io on/off with duration  `code1`
+- Bit Bang PWM (pulse width modulation), loop io on/off with duration;  code-1.f
 - use LED port as test io output
 
  
